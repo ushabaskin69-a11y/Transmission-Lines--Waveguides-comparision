@@ -61,50 +61,49 @@ Flanges for connection
 
 
 ---
-📊 Comparison Table
+Comparision Table:
 
-Feature        |	 Transmission Line 	     |     Waveguide
-
-Structure	        Two conductors	              Hollow tube
-Modes	            TEM                  	      TE / TM
-Losses            High	                        Very low
-Frequency Range 	Low to microwave	          High microwave & mm-wave
-Power Handling    	Medium	                  Very high
-Applications	  RF, antennas, circuits	      Radar, satellite, microwave systems
-
+| *Feature*               | *Transmission Line*                                   | *Waveguide*                                       |
+|---------------------------|----------------------------------------------------------|------------------------------------------------------|
+| Structure                 | Two conductors                                           | Hollow metallic tube                                 |
+| Mode of Propagation      | TEM (Transverse Electromagnetic)                         | TE / TM modes                                        |
+| Losses                   | Higher losses                                             | Very low losses                                      |
+| Frequency Range          | Low to microwave frequencies                              | High microwave & mm-wave frequencies                 |
+| Power Handling           | Medium power                                              | Very high power                                      |
+| Applications             | RF circuits, antennas, communication lines                | Radar, satellite links, microwave systems            |
+| Cost                     | Low                                                       | High                                                 |
+| Wavelength Propagation   | λ (free space wavelength)                                | Guided wavelength λg > λ                             |
+| Construction Material    | Conductors + dielectric                                   | Hollow metal (usually brass, copper, aluminum)       |
 
 📐 Important Equations
 
 1. Characteristic Impedance (Transmission Line)
 
-Z_0 = \sqrt{\frac{R + j\omega L}{G + j\omega C}}
+Z₀ = √((R + jωL) / (G + jωC))
 
 2. Wavelength in Waveguide
 
-\lambda_g = \frac{\lambda}{\sqrt{1 - \left(\frac{\lambda}{\lambda_c}\right)^2}}
+λg = λ / √(1 − (λ / λc)²)
 
 3. Cutoff Frequency (Rectangular Waveguide)
 
-f_c = \frac{c}{2a}
+fc = c / (2a)
 
 Numerical problem:
 
 A rectangular waveguide has a broad dimension a = 2.5 cm.
 Find the cutoff frequency for the TE₁₀ mode.
 
-c = 3 \times 10^8 \text{ m/s}
-
-Solution:
+Given:
+a = 2.5 cm = 0.025 m
+c = 3 ×10⁸ m/s
 
 Formula:
+fc = c / (2a)
 
-f_c = \frac{c}{2a}
-
-Convert a = 2.5 cm = 0.025 m
-
-f_c = \frac{3 \times 10^8}{2 \times 0.025}
-
-f_c = 6 \text{ GHz}
+Substitute:
+fc = (3 × 10⁸) / (2 × 0.025)
+fc = 6 × 10⁹ Hz
 
 Answer: Cutoff frequency = 6 GHz
 
